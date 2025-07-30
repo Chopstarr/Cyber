@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Daniel Saint Cyr</title>
+    <script
+      src="https://kit.fontawesome.com/ab98d88b50.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="G.png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="G.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Cybersecurity Professional</p>
+          <h1>Hi, I'm <span>Daniel</span> Saint Cyr</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------about----------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="banner.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>IT and cybersecurity professional.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span>Building Servers and Networks</span><br />Servers
+                  equipped with NAS,Hypervisor OS, RAID storage,
+                  containerization, and more.
+                </li>
+                <li>
+                  <span>Virtualization</span><br />
+                  Created Honeypots, configured firewalls, S.I.E.M's, etc.
+                </li>
+                <li>
+                  <span>Packet Capture & Analysis</span><br />
+                  Wireshark network monitoring, tcpdump & dumpcap packet
+                  capture, forensic analysis
+                </li>
+                <li>
+                  <span>Vulnerabily Scanning</span><br />
+                  Nmap footprinting, Nessus Credentialed scanning, Sytem
+                  hardening, BurpSuite webapp testing
+                </li>
+                <li>
+                  <span>Scripting & Automation</span><br />Automated Python
+                  scripts for web scraping, Poweshell scripting to autolog
+                  attacks
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Troubleshooting</span><br />Hardware, Software, OS, etc
+                </li>
+                <li>
+                  <span>Coding</span><br />
+                  Python, HTML, CSS
+                </li>
+                <li>
+                  <span>Tools & Frameworks</span><br />MITRE ATT&CK, YARA,
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Georgia State University - Present</span><br />B.B.A,
+                  Computer Information Systems
+                </li>
+                <li><span>Comptia</span><br />Security+</li>
+                <li><span>Comptia</span><br />Network+</li>
+                <li>
+                  <span>Microsoft - In Progress</span><br />Azure Administrator
+                  Associate
+                </li>
+                <li><span>Cisco - In Progress</span><br />CCNA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------certifications------------- -->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title" id="cert-title" onclick="toggleCertifications()">
+          Certifications<i
+            class="fa-solid fa-arrows-up-to-line"
+            id="cert-icon-up"
+          ></i>
+          <i class="fa-solid fa-arrows-down-to-line" id="cert-icon-down"></i>
+        </h1>
+        <div class="certifications-list" id="certifications-list">
+          <div class="aplus">
+            <img src="sec+.png" alt="" />
+            <a href="google.com" target="_blank">
+              CompTIA Security+ Certified</a
+            >
+          </div>
+          <div>
+            <img src="net+.png" alt="" />
+            <a
+              href="https://badges.mbaresearch.org/badge/wGuSCXTver"
+              target="_blank"
+              >CompTIA Network+ Certified</a
+            >
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------services------------------- -->
+ <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services (Coming Soon)</h1>
+         <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Showcase your brand or project with visually appealing static web designs. I can create user-friendly websites tailored to your unique needs. Elevate your online presence with my clean and customized webpages.</p>
+                    <a href="/coming-soon">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>IT Consultation</h2>
+                    <p>Optimize your tech setup with personalized IT consultation. Whether you're a business or an individual, I will provide guidance to align your technology with your goals. Let me empower your journey with clean, efficient, and customized IT solutions.</p>
+                    <a href="/coming-soon">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Tutoring</h2>
+                    <p>Unlock the power of Python with personalized tutoring sessions. Whether you're a beginner or advancing your skills, join me on a journey where learning Python is an enjoyable and rewarding experience. Let's tackle coding challenges together.</p>
+                    <a href="/coming-soon">Learn more</a>
+                </div>
+            </div> -->
+      </div>
+    </div>
+    <!-- -------------------portfolio------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio (Preview) </h1>
+         <div class="work-list">
+                <div class="work">
+                    <img src="GeoIP.PNG" alt="Wireshark GeoIP">
+                    <div class="layer">
+                        <h3>Wireshark GeoIP</h3>
+                        <p>A map of all the traffic I captured on a live network with Wireshark using GeoIP databases.</p>
+                        <a href="/photoqurls" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Failed RDP Map2.PNG" alt="Azure Threat Map">
+                    <div class="layer">
+                        <h3>Azure Sentinel Threat Map</h3>
+                        <p>Honeypot in Azure where I logged the data to my SIEM and created a threat map.
+                        </p>
+                        <a href="/coming-soon"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Nessus credscan2.PNG" alt="Nessus Cerdential Scan">
+                    <div class="layer">
+                        <h3>Nessus Cerdential Scan</h3>
+                        <p>Performed multiple scans on a depricated version of windows with defender disabled and unsecure applications</p>
+                        <a href="https://github.com/Morbid1134/Wordle-Algorithm/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="honeypot telemetry.PNG" alt="Honeypot telemetry">
+                    <div class="layer">
+                        <h3>Honetpot Telemtry</h3>
+                        <p>Powershell script displaying attack origins, failed logins, and logging data to SIEM</p>
+                        <a href="mywork.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn"> Full Work tab In Development</a>
+      </div>
+    </div>
+    <!-- -------------------contact----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>dsaintcyr7@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+1 (470) 896 - 1655</p>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/dsaintcyr7" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Chopstarr/Cyber" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="c:\Users\dsain\Downloads\ResumeHD.pdf" class="btn btn2" download
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024, Daniel.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tab_name) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab_name).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyGh3FIIXETQ8u7DVRvNa7C8aGnO9oGwjr3CvVT4wgsa0-tefINBC2ZACo8zoNDPnOIug/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.style.color = "#61b752";
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => {
+            msg.style.color = "red";
+            msg.innerHTML = "Message failed to send";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          });
+      });
+    </script>
+    <script>
+      function toggleCertifications() {
+        var certificationsList = document.getElementById("certifications-list");
+        var cert_icon_up = document.getElementById("cert-icon-up");
+        var cert_icon_down = document.getElementById("cert-icon-down");
+        var contentHeight = certificationsList.scrollHeight + "px";
+
+        if (
+          certificationsList.style.maxHeight === "0px" ||
+          certificationsList.style.maxHeight === ""
+        ) {
+          certificationsList.style.maxHeight = contentHeight;
+          certificationsList.style.overflow = "visible";
+          certificationsList.style.opacity = "1";
+          cert_icon_down.style.transform = "translateY(50%)";
+          cert_icon_up.style.transform = "translateY(50%)";
+          cert_icon_down.style.opacity = "0";
+          cert_icon_up.style.opacity = "1";
+        } else {
+          certificationsList.style.maxHeight = "0";
+          certificationsList.style.overflow = "hidden";
+          certificationsList.style.opacity = "0";
+          cert_icon_down.style.transform = "translateY(-20%)";
+          cert_icon_up.style.transform = "translateY(-20%)";
+          cert_icon_down.style.opacity = "1";
+          cert_icon_up.style.opacity = "0";
+        }
+      }
+    </script>
+  </body>
+</html>
